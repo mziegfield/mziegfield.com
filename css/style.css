@@ -11,6 +11,13 @@ body, h1, h2, h3, h4, p {
 	font-family: 'Poppins', sans-serif;
 }
 
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
+
 /* -----Scrollbar----- */
 /* Width */
 ::-webkit-scrollbar {
