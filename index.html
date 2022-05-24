@@ -27,7 +27,7 @@
     <!-- Navbar Stuff -->
 	<nav class="navbar navbar-expand-lg">
 	  <a class="navbar-brand no-drag" href="#">
-		<img src="assets/sigBlack.png" width="250px" alt="mziegfield">
+		<img src="assets/sigBlack.png" width="250px" alt="mziegfield" oncontextmenu="return false;" ondragstart="return false;">
 		</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -48,6 +48,11 @@
 	      <li class="nav-item">
 	        <a class="nav-link disabled" href="#">Disabled</a>
 	      </li>
+	      <div>
+	    			<a href="https://instagram.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/ig.svg"></a>
+	    			<a href="https://twitter.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/twt.svg"></a>
+	    			<a href="https://artstation.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/artstation.svg"></a>
+	    	</div>
 	    </ul>
 	  </div>
 	</nav>
@@ -55,12 +60,14 @@
 </head>
 
 	<!-- Intro Card -->
-  <body>
-		<div class="card mx-auto rounded-0 intro-card container border-0" style="width: 50%; height: 350px;">
+  <body class="has-bg-img">
+		<div class="card mx-auto mb-5 rounded-0 intro-card container border-0 shadow" style="width: 50%; height: 350px;">
 		  <div class="card-body row">
 		  	<!-- Portrait -->
 	    	<div class="col-5 my-auto">
-	    		<img class="img-portrait no-drag" src="https://drive.google.com/uc?id=1SGCJFw7Lymn5lB-kMkiczTxi8wZNys80">
+	    		<img class="img-portrait no-drag" src="https://drive.google.com/uc?id=1SGCJFw7Lymn5lB-kMkiczTxi8wZNys80" 
+	    		oncontextmenu="return false;" 
+	    		ondragstart="return false;">
 	    	</div>
 	    	<!-- Info -->
 	    	<div class="col my-auto ">
@@ -75,8 +82,14 @@
 		  </div>
 		</div>
 
-		<img class="full-bg-banner" src="https://drive.google.com/uc?id=1C6VhCyTLDaAS7ilJf8zNmsvElh_lva7F">
+		<!-- Main Banner -->
+		<img class="full-bg-banner bg-img" src="https://drive.google.com/uc?id=1C6VhCyTLDaAS7ilJf8zNmsvElh_lva7F" 
+		oncontextmenu="return false;" 
+		ondragstart="return false;">
 
+		<div class="mx-auto" style="width:50%">
+			<p>Scroll down for more!</p>
+		</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
