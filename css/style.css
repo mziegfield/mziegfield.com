@@ -1,14 +1,43 @@
-body {
+body, h1, h2, h3, h4 {
 	font-family: 'Poppins', sans-serif;
+}
+
+.img-portrait {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.info-header {
+	font-weight: 500;
+}
+
+.info-body {
+	font-weight: 300;
+}
+
+.social-icon {
+	height: 25px;
+}
+
+.full-bg-banner {
+	width: 100%;
+	z-index: -90;
+	transform: translateY(-175px);
 }
 
 nav.class {
 	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
+	-moz-user-select: none;    /* Firefox */
+	-ms-user-select: none;     /* IE10+/Edge */
+	user-select: none;         /* Standard */
 }
 
-.navbar-color, .bg-light {
-	background-color: black;
+.navbar-brand {
+	margin-left: 25px;
+}
+
+.intro-card {
+	background-color: White;
+	margin-top: 115px;
+	z-index: 90;
 }
