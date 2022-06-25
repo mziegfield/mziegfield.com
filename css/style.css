@@ -70,8 +70,9 @@ body, h1, h2, h3, h4, p {
 	width: 100%;
 	position: absolute;
 	left: 0;
+	/*
 	top: 415px;
-	z-index: -90;
+	z-index: -90; */
 }
 
 .no-drag {
