@@ -113,6 +113,7 @@ nav .navbar-nav li a:hover{
 
 .carousel-inner {
 	background-color: black;
+	border-radius: 15px;
 }
 
 .carousel-item img{
@@ -120,6 +121,25 @@ nav .navbar-nav li a:hover{
 	object-fit: contain;
 }
 
-div.rounded {
-	border-radius: 500px;
+.post-carousel {
+	margin-left: 10%;
+}
+
+.scroll-toast {
+	width: 600px;
+	height: 10px;
+	transform: translateY(35px);
+	z-index: 900;
+	background-color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.main-item-header {
+	margin-left: 9%;
+	margin-right: 9%;
+}
+
+.main-items {
+	width: 80%;
 }

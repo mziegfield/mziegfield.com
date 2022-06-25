@@ -40,24 +40,43 @@
 </head>
 
   <body>
+  	<!-- Scroll Down Toast -->
+  	<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100 fixed-bottom">
+	  	<div class="toast align-items-center pt-2 scroll-toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+			  <div class="d-flex">
+			    <div class="toast-body">
+			    	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short me-4" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+					</svg>
+			    	Scroll down for more projects!
+			   </div>
+			    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+			  </div>
+			</div>
+		</div>
+
 	  <!-- Carousel -->
-	  <div class="carousel-main mx-auto">
-			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-main mx-auto mb-5">
+			<div id="illustrationsCarousel" class="carousel slide" data-bs-ride="carousel">
 			  <div class="carousel-indicators">
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
 			  </div>
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
 			      <img src="https://drive.google.com/uc?id=1m6Yf-L0i2Qz-UhlrBjcrXpr4x9ZI6JXh" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5></h5>
+				        <p></p>
+				      </div>
 			    </div>
 			    <div class="carousel-item">
 			      <img src="https://drive.google.com/uc?id=1S87Yr_rkyT3ocnEBoQNIR6I_TV-9E9yg" class="d-block w-100" alt="...">
@@ -87,14 +106,36 @@
 			      <img src="https://drive.google.com/uc?id=1hbu10SgD3jDx5FqmTLaaSNxnDwatfwAd" class="d-block w-100" alt="...">
 			    </div>
 			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <button class="carousel-control-prev" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			    <span class="visually-hidden">Previous</span>
 			  </button>
-			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <button class="carousel-control-next" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="next">
 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    <span class="visually-hidden">Next</span>
 			  </button>
+			</div>
+		</div>
+
+		<div class="main-item-header container my-5">
+			<div class="row">
+				<div class="col">
+					<h2>Check out my other work!</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-items container mb-5 pb-5">
+			<div class="row">
+				<div class="col card p-4">
+					<p>Filler Text!</p>
+				</div>
+				<div class="col card p-4 mx-5">
+					<p>More Filler Text!</p>
+				</div>
+				<div class="col card p-4">
+					<p>Guess What? Even MORE Filler Text!</p>
+				</div>
 			</div>
 		</div>
 
@@ -107,6 +148,12 @@
 		$(function(){
   		$("#nav-placeholder").load("navbar.html");
 		});
-	</script>
+		</script>
+
+		<script>
+		    $(document).ready(function() {
+		        $(".toast").toast('show');
+		    });
+		</script>
   </body>
 </html>
