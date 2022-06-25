@@ -18,6 +18,22 @@ body, h1, h2, h3, h4, p {
   opacity: 1;
 }
 
+.navbar-brand {
+	margin-left: 25px;
+}
+
+nav.navbar {
+height: 15vh;
+}
+
+nav .navbar-nav li a{
+  color: rgb(100, 100, 100);
+}
+
+nav .navbar-nav li a:hover{
+  color: black;
+}
+
 /* -----Scrollbar----- */
 /* Width */
 ::-webkit-scrollbar {
@@ -66,13 +82,16 @@ body, h1, h2, h3, h4, p {
 	margin-bottom: 5px;
 }
 
-.full-bg-banner {
+.banner-container {
 	width: 100%;
+	overflow: hidden;
 	position: absolute;
-	left: 0;
-	/*
-	top: 415px;
-	z-index: -90; */
+	justify-content: center;
+	z-index: -90;
+}
+
+.banner-art {
+	height: 85vh;
 }
 
 .no-drag {
@@ -82,12 +101,25 @@ body, h1, h2, h3, h4, p {
 	user-select: none;         /* Standard */
 }
 
-.navbar-brand {
-	margin-left: 25px;
-}
-
 .intro-card {
 	background-color: White;
 	margin-top: 115px;
 	z-index: 90;
+}
+
+.carousel-main {
+	width: 80%;
+}
+
+.carousel-inner {
+	background-color: black;
+}
+
+.carousel-item img{
+	height: 80vh;
+	object-fit: contain;
+}
+
+div.rounded {
+	border-radius: 500px;
 }
