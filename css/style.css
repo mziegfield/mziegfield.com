@@ -126,13 +126,13 @@ nav .navbar-nav li a:hover{
 }
 
 .scroll-toast {
-	width: 600px;
-	height: 10px;
+	width: 600px !important;
+	height: 10px !important;
 	transform: translateY(35px);
 	z-index: 900;
-	background-color: white;
-	padding-left: 20px;
-	padding-right: 20px;
+	background-color: white !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
 }
 
 .main-item-header {
