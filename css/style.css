@@ -22,10 +22,6 @@ body, h1, h2, h3, h4, p {
 	margin-left: 25px;
 }
 
-nav.navbar {
-height: 15vh;
-}
-
 nav .navbar-nav li a{
   color: rgb(100, 100, 100);
 }
