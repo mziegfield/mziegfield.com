@@ -37,8 +37,8 @@
 
     <!-- Navbar Stuff -->
 	<div id="nav-placeholder"></div>
-</head>
-<body class="has-bg-img">
+	</head>
+	<body class="has-bg-img">
   	<!-- Main Banner -->
   	<div class="banner-container">
 		<img class="banner-art" src="https://drive.google.com/uc?id=1C6VhCyTLDaAS7ilJf8zNmsvElh_lva7F" 
@@ -47,18 +47,25 @@
 	</div>
 
 	<!-- Intro Card -->
-		<div class="card mx-auto mb-5 rounded-0 intro-card container border-0 shadow" style="width: 50%; height: 45%">
+		<div class="card mx-lg-auto mb-lg-5 rounded-0 intro-card container border-0 shadow" style="width: 50%; height: 45vh">
 		  <div class="card-body row">
 		  	<!-- Portrait -->
-	    	<div class="col-5 my-auto">
+	    	<div class="col-5 my-auto d-none d-md-block">
+	    		<img class="img-portrait no-drag" src="https://drive.google.com/uc?id=1SGCJFw7Lymn5lB-kMkiczTxi8wZNys80" 
+	    		oncontextmenu="return false;" 
+	    		ondragstart="return false;">
+	    	</div>
+	    	<div class="py-3 d-md-none" id="img-small-about">
 	    		<img class="img-portrait no-drag" src="https://drive.google.com/uc?id=1SGCJFw7Lymn5lB-kMkiczTxi8wZNys80" 
 	    		oncontextmenu="return false;" 
 	    		ondragstart="return false;">
 	    	</div>
 	    	<!-- Info -->
 	    	<div class="col my-auto ">
-	    		<h2 class="info-header">Mygel Ziegfield Edoloverio</h2>
-	    		<p class="info-body">illustrator, 3D artist</p>
+	    		<h2 class="info-header d-none d-md-block">Mygel Ziegfield Edoloverio</h2>
+	    		<h2 class="info-header d-md-none h2-small">Mygel Ziegfield Edoloverio</h2>
+	    		<p class="info-body d-none d-md-block">illustrator, 3D artist</p>
+	    		<p class="info-body d-md-none p-small">illustrator, 3D artist</p>
 	    		<div>
 	    			<a href="https://instagram.com/mziegfield" target="_blank"><img class="social-icon" src="assets/ig.svg"></a>
 	    			<a href="https://twitter.com/mziegfield" target="_blank"><img class="social-icon" src="assets/twt.svg"></a>

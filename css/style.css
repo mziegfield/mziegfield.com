@@ -11,6 +11,18 @@ body, h1, h2, h3, h4, p {
 	font-family: 'Poppins', sans-serif;
 }
 
+.h2-small {
+	font-size: 18px;
+}
+
+.p-small {
+	font-size: 10px;
+}
+
+.img-small-about img {
+
+}
+
 .fade {
   margin: 50px;
   padding: 50px;
@@ -87,7 +99,11 @@ nav .navbar-nav li a:hover{
 }
 
 .banner-art {
-	height: 85vh;
+	height: 100vh;
+}
+
+.has-bg-img {
+	overflow-y: hidden;
 }
 
 .no-drag {
@@ -99,7 +115,7 @@ nav .navbar-nav li a:hover{
 
 .intro-card {
 	background-color: White;
-	margin-top: 115px;
+	margin-top: 20vh;
 	z-index: 90;
 }
 
