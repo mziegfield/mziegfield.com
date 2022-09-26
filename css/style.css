@@ -19,8 +19,8 @@ body, h1, h2, h3, h4, p {
 	font-size: 10px;
 }
 
-.img-small-about img {
-
+#img-small-about img {
+	width: 150px;
 }
 
 .fade {
@@ -129,8 +129,13 @@ nav .navbar-nav li a:hover{
 }
 
 .carousel-item img{
-	height: 80vh;
-	object-fit: contain;
+	height: 100%;
+	object-fit: fill;
+}
+
+#oddHeightItem img{
+	padding:  3.14vw 0;
+	object-fit: contain !important;
 }
 
 .post-carousel {
