@@ -1,0 +1,13 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="none" d="m0,0l24,0l0,24l-24,0l0,-24z"/>
+  <rect stroke="#ffffff" fill="none" id="svg_2" y="5" x="3" width="18" rx="2" height="14"/>
+  <path id="svg_3" d="m3,7l9,6l9,-6" stroke-linecap="null" stroke-linejoin="null" stroke-width="null" stroke="#ffffff" fill="none"/>
+ </g>
+</svg>
