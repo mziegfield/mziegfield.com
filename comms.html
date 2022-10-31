@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>illustrations — mziegfield</title>
+    <title>commissions — mziegfield</title>
 
     <!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -36,27 +36,37 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
 
     <!-- Navbar Stuff -->
-	<div id="nav-placeholder"></div>
+	<div id="nav-placeholder" class="border-bottom"></div>
 </head>
 
   <body>
-  	<!-- Scroll Down Toast --> <!-- Deactivated
+  	<!-- Scroll Down Toast -->
   	<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100 fixed-bottom">
 	  	<div class="toast align-items-center pt-2 scroll-toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
 			  <div class="d-flex">
-			    <div class="toast-body">
+			    <div class="toast-body" style="font-size: 1.5vh;">
 			    	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short me-4" viewBox="0 0 16 16">
 					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
 					</svg>
-			    	Scroll down for more!
+			    Waitlist link at the bottom!
 			   </div>
 			    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
 			  </div>
 			</div>
-		</div> -->
+		</div>
+
+		<!-- if you wanna do the long scroll thing, enable this
+	  <img src="assets/comms/1.jpg" class="img-fluid">
+	  <img src="assets/comms/2.jpg" class="img-fluid">
+	  <img src="assets/comms/3.jpg" class="img-fluid">
+	  <img src="assets/comms/4.jpg" class="img-fluid">
+	  <img src="assets/comms/5.jpg" class="img-fluid">
+	  <img src="assets/comms/6.jpg" class="img-fluid">
+	  <img src="assets/comms/7.jpg" class="img-fluid mb-5"> -->
+
 
 	  <!-- Carousel -->
-	  <div class="container carousel-main mx-auto mb-5">
+		<div class="mx-auto mb-5">
 			<div id="illustrationsCarousel" class="carousel slide" data-bs-ride="carousel">
 			  <div class="carousel-indicators">
 			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -66,48 +76,36 @@
 			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
 			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
 			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
 			  </div>
-			  <div class="carousel-inner">
+
+			  <!-- Look, this part has !important because I'm a dumbass and I put stuff in style.css without thinking of future-Mygel ever wanting to use the carousel ever again on any other part of the site -->
+			  <div class="carousel-inner"
+			  style="background-color: white !important; border-radius: 0px !important;">
+
 			    <div class="carousel-item active">
-			      <img src="assets/img/illus/1.jpg" class="d-block w-100" alt="...">
+			      <img src="assets/comms/1.jpg" class="d-block w-100" alt="...">
 				      <div class="carousel-caption d-none d-md-block">
 				        <h5></h5>
 				        <p></p>
 				      </div>
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/illus/2.jpg" class="d-block w-100" alt="...">
+			      <img src="assets/comms/2.jpg" class="d-block w-100" alt="...">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/illus/3.jpg" class="d-block w-100" alt="...">
+			      <img src="assets/comms/3.jpg" class="d-block w-100" alt="...">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/illus/4.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item" id="oddHeightItem">
-			      <img src="assets/img/illus/5.jpg" class="d-block w-100" alt="...">
+			      <img src="assets/comms/4.jpg" class="d-block w-100" alt="...">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/illus/6.jpg" class="d-block w-100" alt="...">
+			      <img src="assets/comms/5.jpg" class="d-block w-100" alt="...">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/illus/7.jpg" class="d-block w-100" alt="...">
+			      <img src="assets/comms/6.jpg" class="d-block w-100" alt="...">
 			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/img/illus/8.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/img/illus/9.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/img/illus/10.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/img/illus/11.jpg" class="d-block w-100" alt="...">
+			    <div class="carousel-item" data-bs-interval="20000">
+			      <img src="assets/comms/7.jpg" class="d-block w-100" alt="...">
 			    </div>
 			  </div>
 			  <button class="carousel-control-prev" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="prev">
@@ -121,39 +119,15 @@
 			</div>
 		</div>
 
-		<div class="container row mx-auto mb-5 pt-5 pb-5 border-top border-bottom">
-			<div class="col-lg-3 col-3 col-md-1 d-flex flex-column me-0" style="height: auto; width: 25.62%;">
-				<div class="rectangle mb-5"></div>
-				<h3 class="mt-4">check out<br>my other work!</h3>
-			</div>
-
-			<div class="col-lg-8 col-sm-1 col-md-7 ms-sm-0 pe-3" style="width: 74.38%;">
-				<div class="row justify-content-end ms-5">
-
-				<div class="card col-lg-5 col-md-2 p-0 mx-auto mx-md-2 mb-3" style="width: 16rem;">
-				  <img src="assets/img/thumbs/1.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  </div>
-				</div>
-
-				<div class="card col-lg-5 col-md-2 p-0 mx-auto mx-md-2 mb-3" style="width: 16rem;">
-				  <img src="assets/img/thumbs/1.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  </div>
-				</div>
-				
-				<div class="card col-lg-5 col-md-2 p-0 mx-auto mx-md-2 mb-3" style="width: 16rem;">
-				  <img src="assets/img/thumbs/1.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  </div>
-				</div>
-
-			</div>
-			</div>
-		</div>
+		<!-- Waitlist button -->
+	  <div class="mb-5 container row mx-auto" id="waitlistGroup">
+	  	<div class="container col-12 mx-auto">
+	  		<h2 class="text-center">Click the link below whenever you're ready! (⭒•͈ 𓎺 •͈ )</h2>
+	  	</div>
+	  	<div class="container col-12 btn btn-primary mt-4 mx-auto fs-1 rounded-pill" id="waitlistButton">
+	  		Waitlist Link
+	  	</div>
+	  </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

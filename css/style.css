@@ -23,6 +23,10 @@ body, h1, h2, h3, h4, p {
 	width: 100%;
 }
 
+a {
+	text-decoration-color: #f1113e !important;
+}
+
 .rectangle {
 	height: 1vw;
   width: 3.5vw;
@@ -174,4 +178,23 @@ nav .navbar-nav li a:hover{
 
 .main-items {
 	width: 80%;
+}
+
+#waitlistGroup {
+	margin-top: 20vh !important;
+}
+
+#waitlistButton {
+	width: 70%;
+	font-weight: lighter; 
+	background-color: white; 
+	border-color: black;
+	color: black;
+	margin-bottom: 25vh;
+}
+
+#waitlistButton:hover { 
+	background-color: black; 
+	border-color: black;
+	color: white;
 }
