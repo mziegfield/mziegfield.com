@@ -25,6 +25,11 @@ body, h1, h2, h3, h4, p {
 
 a {
 	text-decoration-color: #f1113e !important;
+	color: #f1113e;
+}
+
+a:hover {
+	color: #a3051a;
 }
 
 .rectangle {
@@ -138,13 +143,22 @@ nav .navbar-nav li a:hover{
 	z-index: 90;
 }
 
+/* Original card-like size
 .carousel-main {
 	width: 82.7%;
 }
+*/
+
+.carousel-main {
+	width: 100%;
+}
 
 .carousel-inner {
+	/* border-radius: 15px; -- Border radius for card-like size */
+}
+
+.carousel-item#oddHeightItem {
 	background-color: black;
-	border-radius: 15px;
 }
 
 .carousel-item img{
@@ -153,7 +167,7 @@ nav .navbar-nav li a:hover{
 }
 
 #oddHeightItem img{
-	padding:  3.14vw 0;
+	padding:  3.9vw 0;
 	object-fit: contain !important;
 }
 
@@ -180,11 +194,11 @@ nav .navbar-nav li a:hover{
 	width: 80%;
 }
 
-#waitlistGroup {
+#orderGroup {
 	margin-top: 20vh !important;
 }
 
-#waitlistButton {
+#orderButton {
 	width: 70%;
 	font-weight: lighter; 
 	background-color: white; 
@@ -193,8 +207,14 @@ nav .navbar-nav li a:hover{
 	margin-bottom: 25vh;
 }
 
-#waitlistButton:hover { 
+#orderButton:hover { 
 	background-color: black; 
 	border-color: black;
 	color: white;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);    
+    transform: scale(1.01);
+
 }
