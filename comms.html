@@ -45,7 +45,7 @@
   	<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100 fixed-bottom">
 	  	<div class="toast align-items-center pt-2 scroll-toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
 			  <div class="d-flex">
-			    <div class="toast-body" style="font-size: 1.5vh;">
+			    <div class="toast-body text-nowrap" style="font-size: 1.5vh;">
 			    	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short me-4" viewBox="0 0 16 16">
 					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
 					</svg>
@@ -65,67 +65,93 @@
 	  <img src="assets/comms/6.jpg" class="img-fluid">
 	  <img src="assets/comms/7.jpg" class="img-fluid mb-5">
 
+	  <div class="container row mx-auto align-items-end mt-3 pt-5 pb-5 border-top border-bottom">
+	  	<div class="col-6 col-lg-6">
+	  		<p class="fs-2 d-none d-lg-block mb-0">Samples from my previous commissions!</p> <!-- Bigger screens-->
+	  		<p class="fs-6 d-lg-none mb-0">Samples from my previous commissions!</p> <!-- Smaller screens-->
+	  	</div>
+			<div class="mx-auto col-5 col-lg-6 container-fluid px-0" id="samplesCarousel">
+				<div id="illustrationsCarousel" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+				    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+				  </div>
 
-	  <!-- Carousel -->
-	  <!-- Disabling this for now
-		<div class="mx-auto">
-			<div id="illustrationsCarousel" class="carousel slide" data-bs-ride="carousel">
-			  <div class="carousel-indicators">
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-			    <button type="button" data-bs-target="#illustrationsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-			  </div>
+				  <!-- Look, this part has !important because I'm a dumbass and I put stuff in style.css without thinking of future-Mygel ever wanting to use the carousel ever again on any other part of the site -->
+				  <div class="carousel-inner" id="samplesCarouselInner"
+				  style="background-color: white !important;">
 
-			  Look, this part has !important because I'm a dumbass and I put stuff in style.css without thinking of future-Mygel ever wanting to use the carousel ever again on any other part of the site
-			  <div class="carousel-inner"
-			  style="background-color: white !important; border-radius: 0px !important;">
-
-			    <div class="carousel-item active">
-			      <img src="assets/comms/1.jpg" class="d-block w-100" alt="...">
-				      <div class="carousel-caption d-none d-md-block">
-				        <h5></h5>
-				        <p></p>
-				      </div>
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/comms/2.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/comms/3.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/comms/4.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/comms/5.jpg" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/comms/6.jpg" class="d-block w-100" alt="...">
-			     </div>
-			    </div>
-			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Previous</span>
-			  </button>
-			  <button class="carousel-control-next" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Next</span>
-			  </button>
+				    <div class="carousel-item active">
+				      <img src="assets/img/comms/1.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="assets/img/comms/2.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="assets/img/comms/3.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="assets/img/comms/4.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="assets/img/comms/5.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="assets/img/comms/6.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="assets/img/comms/6.jpg" class="d-block w-100" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5></h5>
+					        <p></p>
+					      </div>
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#illustrationsCarousel" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
 			</div>
 		</div>
-
-		<div>
-		<img src="assets/comms/7.jpg" class="img-fluid mb-5">
-		</div> -->
 
 		<!-- Waitlist button -->
 	  <div class="mb-5 container row mx-auto" id="orderGroup">
 	  	<div class="container col-12 mx-auto">
-	  		<h5 class="text-center">When you're ready, click the button to get directed to my order form (⭒•͈ 𓎺 •͈ )</h5>
+	  		<h5 class="text-center text-wrap">When you're ready, click the button to get directed to my order form (⭒•͈ 𓎺 •͈ )</h5>
 	  	</div>
 				<a href="https://forms.gle/mrxP9VCowV1F7ea69" id="orderButton" class="col-12 container mt-4 mx-auto btn btn-primary fs-2 rounded-pill mx-auto" target="_blank">
 		  	Commission Order Form

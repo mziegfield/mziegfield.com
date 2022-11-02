@@ -23,6 +23,11 @@ body, h1, h2, h3, h4, p {
 	width: 100%;
 }
 
+img {
+	pointer-events: none;
+	user-select: none;
+}
+
 a {
 	text-decoration-color: #f1113e !important;
 	color: #f1113e;
@@ -217,4 +222,12 @@ nav .navbar-nav li a:hover{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);    
     transform: scale(1.01);
 
+}
+
+#samplesCarousel {
+	width: 45%;
+}
+
+#samplesCarouselInner {
+	border-radius: 15px;
 }
