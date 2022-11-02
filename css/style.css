@@ -213,7 +213,7 @@ nav .navbar-nav li a:hover{
 	color: white;
 }
 
-.card:hover{
+.card-hover:hover{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);    
     transform: scale(1.01);
 
