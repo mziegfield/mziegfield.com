@@ -65,7 +65,7 @@ body, h1, h2, h3, h4, p {
 }
 
 .index-bg {
-	background: url("../assets/bg/dreamer.PNG") no-repeat center center fixed;
+	background: url("../assets/bg/dreamer.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -75,12 +75,12 @@ body, h1, h2, h3, h4, p {
 }
 
 .nav3d:hover ~ .index-bg {
-	background: url("../assets/bg/dreamer.PNG") no-repeat center center fixed;
+	background: url("../assets/bg/dreamer.png") no-repeat center center fixed;
 }
 
 @media (max-width: 992px) {
   .index-bg {
-	background: url("../assets/bg/dreamer.PNG") no-repeat center center fixed;
+	background: url("../assets/bg/dreamer.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

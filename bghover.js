@@ -15,9 +15,9 @@ function setBackgroundWithFade(element, newBackground) {
 
 // Event listeners for hover
 nav3d.addEventListener('mouseenter', () => {
-  setBackgroundWithFade(body, "url('../assets/bg/bg3d-r.PNG')");
+  setBackgroundWithFade(body, "url('../assets/bg/bg3d-r.png')");
 });
 
 nav3d.addEventListener('mouseleave', () => {
-  setBackgroundWithFade(body, "url('../assets/bg/dreamer.PNG')");
+  setBackgroundWithFade(body, "url('../assets/bg/dreamer.png')");
 });
