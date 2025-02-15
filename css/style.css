@@ -1,0 +1,338 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "BagnardSans";
+  src: url('../assets/fonts/BagnardSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bagnard";
+  src: url('../assets/fonts/Bagnard.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficeCodePro-Regular";
+  src: url('../assets/fonts/OfficeCodePro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url('../assets/fonts/WorkSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+	height: 100%;
+	user-select: none;
+	overscroll-behavior: none;
+}
+
+body {
+	height: 100%;
+	overflow: overlay;
+	background-color: black;
+	overscroll-behavior: none;
+}
+
+body, h1, h2, h3, h4, p {
+	font-family: 'WorkSans-Light','Poppins', sans-serif;
+	color: #f3fbf5;
+	  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.index-nav h1{
+	font-size: 4.4vh;
+}
+
+.h2-small {
+	font-size: 18px;
+}
+
+.p-small {
+	font-size: 10px;
+}
+
+.index-bg {
+	background: url("../assets/bg/dreamer.PNG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: black;
+	transition: background-color 2s;
+}
+
+.nav3d:hover ~ .index-bg {
+	background: url("../assets/bg/dreamer.PNG") no-repeat center center fixed;
+}
+
+@media (max-width: 992px) {
+  .index-bg {
+	background: url("../assets/bg/dreamer.PNG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, .5);
+	background-blend-mode: multiply;
+	}
+	#index-bg {
+		position: absolute !important;
+		bottom: 0 !important;
+	}
+}
+
+#img-small-about img {
+	width: 100%;
+}
+
+img {
+	pointer-events: none;
+	user-select: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+}
+
+.img-index-BG {
+	height: 100%;
+}
+
+a {
+	text-decoration-color: #f3fbf5;
+	color: #f3fbf5;
+}
+
+a:hover {
+	color: #f3fbf5;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: black;
+	border: 2px solid rgba(50, 50, 50, 1) !important;
+	border-radius: 6px;
+	position: absolute;
+	transform: translate(80px,0);
+	padding: 15px;
+}
+
+@media (max-width: 991.5px) {
+.navbar-nav > li > .dropdown-menu {
+	position: inherit;
+	transform: translate(0px,0);
+	width: 180px;
+	padding: 15px;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+	}
+}
+.navbar-brand {
+	margin-left: 25px;
+	transform: translateY(-10px);
+}
+
+.navbar-nav {
+	line-height: 40%;
+}
+
+.navbar-nav li a{
+  color: rgba(243, 237, 219, 0.6);
+  font-size: 2vh;
+  transition: transform 0.1s;
+}
+
+@media (max-width: 2991.5px) {
+.navbar-nav > li > a {
+
+}
+
+.navbar-nav li a:hover{
+  color: rgba(215, 200, 145, 1) !important;
+  transform: translate(0,-2px);
+}
+
+.index-nav li a{
+  transition: transform 0.15s;
+}
+
+.index-nav li a:hover{
+  transform: translate(2px);
+}
+.index-nav, .index-nav li a{
+	color: rgba(243, 251, 245, 1);
+	font-family: 'Bagnard';
+	font-size: 18px;
+}
+
+.navbar-toggler:enabled,
+.navbar-toggler:active,
+.navbar-toggler-icon:enabled,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.navbar {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	}
+}
+
+#navbar {
+    transition: top 0.3s;
+}
+
+/* -----Scrollbar----- */
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 110, 110);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* ------End of scrollbar----- */
+
+#catBack {
+	transition: transform 0.5s;
+}
+
+#catBack:hover {
+	transform: translate(10px);
+}
+
+#catBG {
+	background-image: url(../assets/cat-jump.gif); 
+	background-repeat: repeat;
+	height: 90%;
+	transition: background-position-y 120s;
+	transition-timing-function: linear;
+}
+
+#catBG:hover {
+	background-position-y: -50000px;
+}
+
+.social-icon {
+	height: 25px;
+}
+
+.nav-social-icon {
+	height: 25px;
+	margin-bottom: 5px;
+	color: white;
+	filter: invert(100%);
+}
+
+.no-drag {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none;    /* Firefox */
+	-ms-user-select: none;     /* IE10+/Edge */
+	user-select: none;         /* Standard */
+}
+
+/* Original card-like size
+.carousel-main {
+	width: 82.7%;
+}
+*/
+
+.uniformPadding {
+	padding: 25px;
+}
+
+.card {
+	background-color: rgba(0, 12, 4, 0.65);
+}
+
+.index-drop, .index-drop a{
+	line-height: 40%;
+	font-size: 15px !important;
+}
+
+.img-thumbnail {
+	background-color: rgba(0, 0, 0, 0) !important;
+	width: 15% !important;
+	height: auto !important;
+	aspect-ratio: 1;
+	border: none;
+	padding: 0;
+	opacity: 70%;
+	transition: opacity 0.5s, scale 0.3s, filter 0.75s;
+	transition-timing-function: cubic-bezier(.17,.01,0,1.03);
+}
+
+.img-thumbnail:hover {
+	opacity: 100%;
+	scale: 110%;
+}
+
+.img-thumbnail:focus {
+	opacity: 100%;
+	scale: 110%;
+	filter: brightness(1.5) drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.3));
+}
+
+.img-thumbnail-w {
+	background-color: rgba(0, 0, 0, 0) !important;
+	width: 8vw !important;
+	height: auto !important;
+	aspect-ratio: 1;
+	border: none;
+	padding: 0;
+	opacity: 70%;
+	transition: opacity 0.5s, scale 0.3s, filter 0.75s;
+	transition-timing-function: cubic-bezier(.17,.01,0,1.03);
+}
+
+.img-thumbnail-w:hover {
+	opacity: 100%;
+	scale: 110%;
+}
+
+.img-thumbnail-w:focus {
+	opacity: 100%;
+	scale: 110%;
+	filter: brightness(1.5) drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.3));
+}
+
+.carousel-caption {
+	opacity: 0;
+	transition: opacity 0.35s;
+}
+
+.carousel-item:hover > .carousel-caption {
+	opacity: 1;
+}
+
+/* Responsive sizing for carousel (if you don't wanna crop the images beforehand)
+#carousel1 .carousel-item {
+	height: calc(100vh - 20vw) !important; 
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+} */

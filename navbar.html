@@ -1,0 +1,85 @@
+    <!-- Navbar Stuff -->
+	<nav id="navbar" class="navbar navbar-dark navbar-expand-lg py-0" style="z-index: 100000;">
+	 	<a class="navbar-brand no-drag" href="index.html">
+			<img src="assets/Sig-WhiteNew.png" width="200px" alt="mziegfield" oncontextmenu="return false;" ondragstart="return false;">
+		</a>
+	  <button class="navbar-toggler me-xs-4 me-sm-4 me-md-4 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+	  <div class="collapse navbar-collapse pt-2 position-relative" id="navbarSupportedContent">
+	    <ul class="navbar-nav px-3">
+	    	<li class="nav-item">
+	        	<a class="nav-link" href="index.html">home</a>
+	    	</li>
+		<!-- Dropdown -->
+	    	<li>
+	      		<a class="nav-link dropdown-toggle dropdown-toggle-illustrations" data-bs-toggle="dropdown" href="#" role="button">illustrations</a>
+		      	<ul class="dropdown-menu">
+			      <li class="nav-item">
+			        <a class="nav-link" href="illusPersonal.html">personal</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="illusCommission.html">commissions</a>
+			      </li>
+			  	</ul>
+			</li>
+
+	      <li id="link-3d" class="nav-item">
+	      	<a class="nav-link" href="3d.html">animations</a>
+	      </li>
+	      <li class="nav-item">
+	      	<a class="nav-link disabled">•</a>
+	      </li>
+	      <li class="nav-item">
+	      	<a class="nav-link" href="comms.html">commission me</a>
+	      </li>
+	      <li class="nav-item pb-3">
+	      	<a class="nav-link" href="contact.html">contact</a>
+	      </li>
+	      	  <!-- Navbar Socials - Floating-->
+    		<div class="mx-0 mt-5 mb-4 d-lg-none">
+  				<a href="https://instagram.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/ig.svg"></a>
+  				<a href="https://twitter.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/twt.svg"></a>
+  				<a href="https://cara.app/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/cara-logo-outline-icon.png"></a>
+  			</div>
+	    </ul>
+	  </div>
+
+	  <!-- Navbar Socials - Floating-->
+    <div class="mx-5 d-none d-lg-block">
+  			<a href="https://instagram.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/ig.svg"></a>
+  			<a href="https://twitter.com/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/twt.svg"></a>
+  			<a href="https://cara.app/mziegfield" target="_blank"><img class="nav-social-icon" src="assets/cara-logo-outline-icon.png"></a>
+  	</div>
+	</nav>
+	<!-- End of Navbar -->
+
+	<script type="text/javascript">
+    $(document).ready(function () {
+        var url = window.location;
+        $('ul.nav a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var navbar = document.getElementById("navbar");
+        var lastScrollTop = 0;
+
+        window.addEventListener("scroll", function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                navbar.style.top = "-80px";  // Hide the navbar by moving it up
+            } else {
+                // Scrolling up
+                navbar.style.top = "0";  // Show the navbar
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    });
+</script>
