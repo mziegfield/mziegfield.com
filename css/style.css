@@ -50,6 +50,7 @@ body, h1, h2, h3, h4, p {
 	  -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
 }
 
 .index-nav h1{
@@ -120,7 +121,7 @@ a:hover {
 
 .navbar-nav > li > .dropdown-menu {
 	background-color: black;
-	border: 2px solid rgba(50, 50, 50, 1) !important;
+	border: 1px solid rgba(50, 50, 50, 1) !important;
 	border-radius: 6px;
 	position: absolute;
 	transform: translate(80px,0);
@@ -173,6 +174,10 @@ a:hover {
 	color: rgba(243, 251, 245, 1);
 	font-family: 'Bagnard';
 	font-size: 18px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 .navbar-toggler:enabled,
@@ -300,7 +305,7 @@ a:hover {
 
 .img-thumbnail-w {
 	background-color: rgba(0, 0, 0, 0) !important;
-	width: 8vw !important;
+	width: 9vh !important;
 	height: auto !important;
 	aspect-ratio: 1;
 	border: none;
@@ -336,3 +341,13 @@ a:hover {
 	background-repeat: no-repeat !important;
 	background-position: center center !important;
 } */
+
+.vgen1 {
+	transition: transform 0.3s, filter 0.75s;
+	transition-timing-function: cubic-bezier(.17,.01,0,1.03);
+}
+
+.vgen1:hover {
+	transform: scale(1.1);
+	filter: brightness(1.1) drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.3));
+}
