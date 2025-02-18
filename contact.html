@@ -37,20 +37,84 @@
 
     <!-- Navbar Stuff -->
 	<div id="nav-placeholder" class="mb-0 pb-0"></div>
+
+	<!-- Anti-Email-Scraper >:]
+	<style type="text/css">
+        .e-mail:before {
+            content: attr(data-website) "\0040" attr(data-user);
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+    </style> -->
+
 	</head>
 	<body class="has-bg-img">
 
 	<!-- Body -->
-	<div class="uniformPadding text-center mt-5 align-middle" style="background-color: black;">
-		<h1 style="font-weight: bold;">Under Construction</h1>
-		<img src="assets/favicon/android-chrome-192x192.png" class="" style="width: 35vh; transition: width 2s;">
-		<p class="mt-4">contact me via my socials for now!</p>
+	<div class="container mt-md-5 mt-lg-5 pb-1">
+		<h1 class="">//CONTACT</h1>
+		<p>let's get in touch! inquiries, special commissions, dad jokes, etc etc; just fill out the form below, and i'll get back to you!</p>
+			<br>
 	</div>
+	<hr>
+	<div class="container mt-md-4 mt-lg-4 pb-1">
+
+		<div class="card p-5" style="border: 1px solid; border-color: rgb(50,50,50); border-radius: 10px;">
+			<form
+			  id="contactForm"
+			  action="https://formspree.io/f/mdkngkkr"
+			  class="fs-form w-100 w-md-50"
+			  target="_top"
+			  method="POST">
+
+			  <div class="fs-field mb-4">
+			    <label class="fs-label form-label" for="name"><h4>Your Name</h4></label>
+			    <input class="fs-input form-control" id="name" name="name" required />
+			  </div>
+
+			  <div class="fs-field mb-4">
+			    <label class="fs-label form-label" for="email"><h4>Email</h4></label>
+			    <input class="fs-input form-control" id="email" name="email" required />
+			    <p class="fs-description form-text">
+			      This will help me respond to your query via an email.
+			    </p>
+			  </div>
+			  <div class="fs-field mb-4">
+			    <label class="fs-label form-label" for="message"><h4>Message</h4></label>
+			    <textarea
+			      class="fs-textarea form-control d-block"
+			      id="message"
+			      name="message"
+			      required
+			      style="min-height: 120px;"
+			    ></textarea>
+			    <p class="fs-description form-text">What would you like to discuss?</p>
+			  </div>
+			  <div class="fs-button-group">
+			    <button class="btn btn-primary"
+			    data-sitekey=""
+			    data-callback='onSubmit'
+			    data-action="submit"
+			    type="submit">Submit</button>
+			  </div>
+			</form>
+		</div>
+	</div>
+		<!-- Unused Anti-Email-Scraper
+		<h1 class="e-mail" data-user="oirevolodelegym" data-website="moc.liamg"></h1> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+	<!-- reCAPTCHA
+	 <script src="https://www.google.com/recaptcha/api.js"></script>
+	  <script>
+   		function onSubmit(token) {
+    	 document.getElementById("contactForm").submit();
+  		 }
+ 		</script> -->
 
     <!-- Navbar Loading and Highlight Script -->
 	<script>
