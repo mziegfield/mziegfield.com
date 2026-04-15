@@ -21,5 +21,5 @@ nav3d.addEventListener('mouseenter', () => {
 });
 
 nav3d.addEventListener('mouseleave', () => {
-  setBackgroundWithFade(body, "dreamer.png");
+  setBackgroundWithFade(body, "bg_home.png");
 });
