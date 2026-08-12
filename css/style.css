@@ -223,6 +223,54 @@ a:hover {
 }
 /* ------End of scrollbar----- */
 
+#topHvrBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 255px;
+  font-size: 16px;
+  opacity: 0.25;
+  transition: opacity 0.1s, scale 0.3s;
+  scale: 1.0;
+  animation-timing-function: linear(0, 0.203 2.7%, 0.387 5.6%, 0.543 8.6%, 0.674 11.7%, 0.785 15%, 0.831 16.7%, 0.874 18.5%, 0.912 20.4%, 0.944 22.3%, 0.972 24.3%, 0.996 26.4%, 1.021 29.4%, 1.039 32.7%, 1.049 36.3%, 1.053 40.4%, 1.052 43.3%, 1.048 46.7%, 1.019 62.9%, 1.007 72.3%, 1.001 83.1%, 1);
+}
+
+#topHvrBtn:hover {
+  opacity: 1.0;
+  scale: 1.04;
+}
+
+#backHvrBtn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 98;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 255px;
+  font-size: 16px;
+  opacity: 0.25;
+  transition: opacity 0.1s, scale 0.3s;
+  scale: 1.0;
+  animation-timing-function: linear(0, 0.203 2.7%, 0.387 5.6%, 0.543 8.6%, 0.674 11.7%, 0.785 15%, 0.831 16.7%, 0.874 18.5%, 0.912 20.4%, 0.944 22.3%, 0.972 24.3%, 0.996 26.4%, 1.021 29.4%, 1.039 32.7%, 1.049 36.3%, 1.053 40.4%, 1.052 43.3%, 1.048 46.7%, 1.019 62.9%, 1.007 72.3%, 1.001 83.1%, 1);
+}
+
+#backHvrBtn:hover {
+  opacity: 1.0;
+  scale: 1.04;
+}
+
 #catBack {
 	transition: transform 0.5s;
 }
